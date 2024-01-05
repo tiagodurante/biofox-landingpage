@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import SetaIcon from './components/SetaIcon'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -23,6 +25,14 @@ export default function Home() {
         <div className='h-1 w-full bg-bio-green'></div>
         <div>
           <div className='text-bio-green'>Fixo (44) 3659-1666  | Celular (44) 99710-9569</div>
+        </div>
+        <div>
+          <Link href="http://biofox.lab.jalis.net.br:7080/resultado/login" target="_blank">
+            <button className='bg-bio-green text-white px-4 py-2 rounded-md hover:bg-bio-green-dark flex flex-row items-center gap-2'>
+              Resultados
+              <SetaIcon fill='white' stroke='white' width={15} heigth={15}/>
+            </button>
+          </Link>
         </div>
       </div>
     </main>
